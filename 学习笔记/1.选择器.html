@@ -9,6 +9,8 @@
     <div id="id"></div>
     <!-- p标签选择器 -->
     <p></p>
+
+    <div class="box">显示</div>
 </body>
 
 <script>
@@ -21,6 +23,19 @@
     // 全局选择器
     $('*')
 
+// 常用与显隐
+$('.box').addClass('close')//隐藏
+$('.box').removeClass('close')//显示
 
 </script>
+
+<style>
+    .box {
+        display: block;
+
+        &.close {
+            display: none;
+        }
+    }
+</style>
 
